@@ -10,14 +10,14 @@ function App() {
     "https://picsum.photos/id/1003/400/200",
     "https://picsum.photos/id/1004/400/200",
     "https://picsum.photos/id/1005/400/200",
-];
+  ];
 
-const imagesTwo = [
-  "https://picsum.photos/id/1006/400/200",
-  "https://picsum.photos/id/1008/400/200",
-  "https://picsum.photos/id/1009/400/200",
-  "https://picsum.photos/id/1010/400/200",
-];
+  const imagesTwo = [
+    "https://picsum.photos/id/1006/400/200",
+    "https://picsum.photos/id/1008/400/200",
+    "https://picsum.photos/id/1009/400/200",
+    "https://picsum.photos/id/1010/400/200",
+  ];
 
   return (
     <div className="app">
