@@ -1,8 +1,10 @@
 import './App.css';
+import React from 'react';
 import TeacherName from './components/TeacherName/TeacherName';
 import Counter from './components/Counter/Counter';
 import ImageSlider from './components/ImageSlider/ImageSlider';
 import BankAccount from './components/BankAccount/BankAccount';
+import ThunderObservatory from './components/ThunderObservatory/ThunderObservatory';
 
 function App() {
   const imagesOne = [
@@ -20,8 +22,27 @@ function App() {
     "https://picsum.photos/id/1010/400/200",
   ];
 
+  const [thunderList, setThunderList] = React.useState([new Date()]);
+
+  const addThunder = () => {
+    const newThunderList = [...thunderList, new Date()];
+    // no hace falta el push porque en la creación se le ha añadido un elemento
+    // newThunderList.push(new Date());
+    setThunderList(newThunderList);
+  }
+
   return (
     <div className="app">
+      <h2>Lista de rayos:</h2>
+      <ul>
+        {thunderList.map(thunder => <li key={thunder.getTime()}>{thunder.toString()}</li>)}
+      </ul>
+
+      <h2>Observatorios de rayos:</h2>
+      <ThunderObservatory addThunder={addThunder} name="Madrid"></ThunderObservatory>
+      <ThunderObservatory addThunder={addThunder} name="Barcelona"></ThunderObservatory>
+      <ThunderObservatory addThunder={addThunder} name="Valencia"></ThunderObservatory>
+
       <h2>Cuenta bancaria:</h2>
       <BankAccount></BankAccount>
 
