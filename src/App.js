@@ -2,6 +2,7 @@ import './App.css';
 import TeacherName from './components/TeacherName/TeacherName';
 import Counter from './components/Counter/Counter';
 import ImageSlider from './components/ImageSlider/ImageSlider';
+import BankAccount from './components/BankAccount/BankAccount';
 
 function App() {
   const imagesOne = [
@@ -21,6 +22,9 @@ function App() {
 
   return (
     <div className="app">
+      <h2>Cuenta bancaria:</h2>
+      <BankAccount></BankAccount>
+
       <h2>Componente nombre:</h2>
       <TeacherName></TeacherName>
 
