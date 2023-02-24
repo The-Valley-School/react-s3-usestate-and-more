@@ -1,6 +1,6 @@
 # **VIDEO 06 - Ejercicio pujas y control en BankAccount**
 
-En este ejercicio, deberás implementar el componente Bank Account que hemos visto durante los Videos, recuerda que puedes copiar el componente del repositorio de WhatsApp, aunque es preferible que lo hagas tú a mano así practicas.
+En este ejercicio, deberás implementar el componente Bank Account que hemos visto durante los Videos, recuerda que puedes copiar el componente del repositorio de Github, aunque es preferible que lo hagas tú a mano así practicas.
 
 Una vez realizado el componente, deberás añadir cierta lógica para que el usuario no pueda sacar dinero, si no tiene suficiente ahorrado (50€) y también que no pueda pasar al fondo de ahorros, si no tiene los 1000 € necesarios.
 
